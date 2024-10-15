@@ -30,7 +30,7 @@ Los scripts contienen solo comandos simples para que sean fáciles de comprender
 - En el terminal del nodo-ordenador, ejecute `./generate_artifacts.sh` para generar transacciones de configuración y bloque génesis del canal y del sistema (llamadas a configtxgen). Los artefactos se crearán en los directorios `crypto-config` y `channel-artifacts`.
 - Luego en esa misma terminal, ejecute `./orderer1.sh`
 - En las dos terminales para nodos-pares, ejecute `./peer1.sh`, `./peer2.sh` respectivamente. (ojo: si desea tener una unica organización activa, solo debe ejecutar `./peer1.sh`)
-- Tenga en cuenta que el nodo-ordenador y los nodo-pares escriben sus datos (incluidos sus ledger) en su propio subdirectorio en el directorio "datos".
+- Tenga en cuenta que el nodo-ordenador y los nodo-pares escriben sus datos (incluidos sus ledger) en su propio subdirectorio en el directorio "data".
 - En las terminales para administración de nodos-pares, ejecute `source peer1admin.sh`, `source peer2admin.sh` respectivamente. (ojo: si desea tener una unica organización activa, solo debe ejecutar `source peer1admin.sh`)
 
 Los scripts de administración de nodos-pares se ejecutan con el comando `source` para cargar las variables de entorno en los respectivos shells. Esto es importante para que las variables de entorno exportadas puedan ser utilizadas por cualquier comando posterior.
